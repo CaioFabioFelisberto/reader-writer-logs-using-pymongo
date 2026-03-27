@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     app = ctk.CTk()
     app.title("Sys")
-    app.geometry("700x600")
+    app.geometry("450x600")
     app.resizable(True,True)
 
     logs_box = ctk.CTkTextbox(app, width=350, height=200,text_color="green")
