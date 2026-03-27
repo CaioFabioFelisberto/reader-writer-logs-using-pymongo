@@ -59,7 +59,7 @@ if __name__ == "__main__":
 
 
     switch_var = ctk.StringVar(value="on")
-    switch = ctk.CTkSwitch(app, text="Read/Read", command=switch_event,
+    switch = ctk.CTkSwitch(app, text="Read/Write", command=switch_event,
                                      variable=switch_var, onvalue="on", offvalue="off")
 
     switch.pack(pady=10)
