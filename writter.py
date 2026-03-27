@@ -13,7 +13,7 @@ client = MongoClient(uri)
 db = client.logsdb
 logs_collection = db.logs
 
-def write_logs(n, interval=5):
+def write_logs(n=2, interval=5):
     for i in range(n):
 
         mem = psutil.virtual_memory()
@@ -37,6 +37,6 @@ def write_logs(n, interval=5):
 
         time.sleep(interval)
 
-write_logs(10,0.5)
+if __name__ == "__main__":
 
-client.close()
+    client.close()
